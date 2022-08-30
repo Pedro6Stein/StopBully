@@ -3066,6 +3066,14 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+		#one2.spotlight:before {
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
 
 		.spotlight .image.main {
 			display: none;
