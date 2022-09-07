@@ -1,0 +1,110 @@
+/* FORMULARIO */
+body {
+    margin: 0; 
+    background-color: #e4fff0;
+}
+
+#logo{
+    border-radius: 200px;
+
+}
+
+.mainconta{
+    background-color: #e4fff0;
+    justify-content: center;
+    align-items: center; 
+}
+.mainconta2{
+    display: flex;
+}
+.mainconta h2 a{
+    color: #000000;
+}
+
+.left-conta{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.left-conta > h1{
+    color: #000000;
+} 
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 55px;
+    background: #b1e6c8;
+    border-radius: 20px; 
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card > h1 {
+    color: #000000; 
+    font-weight: 800; 
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none; 
+    border-radius: 10px;
+    padding: 15px; 
+    background: #5b8b70;
+    color: #f0ffffde; 
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+
+
+} 
+
+.textfield > label {
+    color: #f0ffffde; 
+    margin-bottom: 10px; 
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94; 
+
+}
+
+.btnconta{
+    width: 100%;
+    padding: 16px 0px; 
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: nome; 
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background-color: #5fce8f;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052; 
+} 
+    
