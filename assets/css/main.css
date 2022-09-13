@@ -4132,5 +4132,16 @@ input, select, textarea {
 					}
 
 	}
+
+	#iconeMeioE{
+		width: 70%;
+		display: flex;
+		text-align: center;
+	}
 	
+	#iconeMeioD{
+		width: 70%;
+		display: flex;
+		text-align: center;
+	}
 	
