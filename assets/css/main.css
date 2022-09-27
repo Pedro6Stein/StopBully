@@ -110,7 +110,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: 0;
 		color: #000000;
 		text-decoration: none;
 	}
@@ -3335,8 +3335,8 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background: rgba(39, 40, 51, 0.965);
-		border-radius: 4px;
+		background: #e4fff0;
+		border-radius: 0;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
 		margin-top: calc(-0.25em + 1px);
@@ -3351,7 +3351,7 @@ input, select, textarea {
 
 			.dropotron > li a, .dropotron > li span {
 				border: 0;
-				color: rgba(255, 255, 255, 0.75);
+				color: rgba(0, 0, 0, 0.75);
 				display: block;
 				padding: 0.1em 1em;
 				text-decoration: none;
@@ -3375,9 +3375,9 @@ input, select, textarea {
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
-				background: #272833;
 				content: '';
 				display: block;
+				background-color: rgba(165, 211, 138, 0.95);
 				height: 1em;
 				position: absolute;
 				right: 1.5em;
@@ -4145,3 +4145,8 @@ input, select, textarea {
 		text-align: center;
 	}
 	
+	#lista::after{
+		color:#0000;
+		background-color: rgba(165, 211, 138, 0.95);
+		box-shadow: #000;
+	}
