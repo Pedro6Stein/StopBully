@@ -3335,13 +3335,19 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background: #e4fff0;
+		background-color: #e4fff0;
 		border-radius: 0;
+		border-style: solid;
+		border-width: 2px; 
+		border-color: rgba(165, 211, 138, 0.95); 
+		
+
+
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
 		margin-top: calc(-0.25em + 1px);
 		min-width: 12em;
-		padding: 0.25em 0;
+		padding: 0.25em 0; 
 	}
 
 		.dropotron > li {
