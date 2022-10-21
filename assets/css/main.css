@@ -3561,9 +3561,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #272833;
+		background: #b1e6c8;
 		padding: 6em 0;
 		text-align: center;
+		
+	}
+
+	#footer li {
+		color: #000;
 	}
 
 		#footer .icons .icon.alt {
