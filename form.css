@@ -54,7 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 55px;
+    padding: 50px 80px;
     background: #b1e6c8;
     border-radius: 20px; 
     box-shadow: 0px 10px 40px #00000056;
@@ -103,7 +103,6 @@ body {
 .btnconta{
     width: 100%;
     padding: 16px 0px; 
-    margin: 25px;
     border: none;
     border-radius: 8px;
     outline: nome; 
@@ -115,4 +114,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052; 
 } 
+#linkEntrar{
+    color:#5b8b70;
     
+}
