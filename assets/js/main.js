@@ -246,11 +246,11 @@
 
 		$banner
 			._parallax();
-a
 })(jQuery);
 
 let contador = 0
 function trocaImg(){
+	alert('oi')
 	if(contador == 0){
 		alert('oi')
 		document.getElementById("legislacao").src = "legislacao.jpg";
