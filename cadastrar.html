@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/form.css"/>
+	<link rel="shortcut icon" type="imagex/jpg" href="LogotipoOficial.jpg">
+    <script src = "assets/js/formjs.js"> </script>
+    <title>Stop Bullying</title>
+</head>
+    <body>
+        <div class="mainconta">
+            <h2><a href="entrar.html"> Voltar</a></h2>
+            <div class="mainconta2">
+            <div class="left-conta">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Bem-Vindo<br>Faça seu login!</h1>
+                <img src="LogotipoOficial.jpg" width="300" id="logo">
+            </div>
+
+            <div class="right-conta">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="card">
+                    <h1>Cadastre Suas Informações</h1>
+                    <form>
+                    <div class="textfield">
+                        <h3><label for="Prontuario">Prontuario</label></h3>
+                        <input type="text" name="Prontuario" placeholder="Prontuario" required maxlength="10">   
+                    </div> 
+                    <div class="textfield">
+                        <h3><label for="Nome">Nome</label></h3>
+                        <input type="text" name="Nome" placeholder="Nome" required>   
+                    </div> 
+                    <div class="textfield">
+                        <h3><label for="Data de Nascimento">Data de Nascimento</label></h3>
+                        <input type="date" name="txData" placeholder="txData" required>   
+                    </div> 
+                    <div class="textfield">
+                        <h3><label for="Câmpus">Câmpus:</label></h3>
+                    <label>
+                        <input type="radio" name="campus" value="Bragança Paulista">Bragança Paulista
+                    </label>
+                    <label>
+                        <input type="radio" name="campus" value="São Paulo"> São Paulo
+                    </label>
+                    <label>
+                        <input type="radio" name="campus" value="Campinas">Campinas
+                    </label>   
+                    </div> 
+
+                    <div class="textfield">
+                        <h3><label>Curso:</label></h3>
+                        <select name="curso" >
+                        <option value="">Selecione</option>
+                        <option value="INFO"> Informática Integrado ao Ensino Médio</option>
+                        <option value="MEC"> Mecânica Integrado ao Ensino Médio</option>
+                        <option value="INFO"> Eletroeletrônica Integrado ao Ensino Médio</option>
+                    </select>
+                    <div class="textfield">
+                        <h3><label for="Duvida">O que espera que o site te proporcione?</label></h3>
+                    <label>
+                        <input type="checkbox" name="ajuda" value="">Mais conhecimento sobre o tema Bullying.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ajuda" value=""> Um atendimento qualificado com o CSP.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ajuda" value=""> Mais confiança e força para conversar com as pessoas sobre o que estou sentindo. 
+                    </label>   
+                    </div> 
+                    <div class="textfield">
+                        <h3><label for="Senha">Senha</label></h3>
+                        <input type="password" name="Senha" placeholder="Senha" required minlenght="8" ><br> 
+                    </div> 
+                    <input class="btnconta" type="submit" name="Entrar" onclick="validaCadastro()"><br>
+                    </form>
+            </div> 
+            <h3><a id="linkEntrar" href="admEntrar.html">Entrar Administrador do Sistema</a></h3>
+        </div> 
+    </div> 
+</div>
+    
+    </body>
+    </html>

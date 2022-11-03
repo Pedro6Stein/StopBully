@@ -90,8 +90,7 @@ body {
 
 } 
 
-.textfield > label {
-    color: #f0ffffde; 
+.textfield > label { 
     margin-bottom: 10px; 
 }
 
