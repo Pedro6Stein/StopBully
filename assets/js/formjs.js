@@ -4,11 +4,12 @@ function validaFormulario(){
     }
 
     function validaFormADM(){
+  
     let email = document.getElementById("Email").value;
     let senha = document.getElementById("Senha").value;
-    if(email=="admin@admin.com.br" && senha == "123"){
-        alert(document.write("Usuário Autenticado"));
+    if(email=="admin@admin.com.br" && senha=="123"){
+        alert("Usuário Autenticado");
      } else{
-        alert(document.write("usuário e senha inválidos."));
+        alert("usuário e senha inválidos.");
     }
     }

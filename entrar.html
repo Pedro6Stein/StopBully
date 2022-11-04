@@ -34,13 +34,14 @@
                     <form>
                     <div class="textfield">
                         <h3><label for="Prontuario">Prontuario</label></h3>
-                        <input type="text" name="Prontuario" placeholder="Prontuario" required maxlength="10">   
+                        <input type="text" id="Prontuario" name="Prontuario" placeholder="Prontuario" required maxlength="10">   
                     </div> 
                     <div class="textfield">
                         <h3><label for="Senha">Senha</label></h3>
-                        <input type="password" name="Senha" placeholder="Senha" required minlenght="8" ><br> 
+                        <input type="password" id="Senha" name="Senha" placeholder="Senha" required minlenght="8" ><br> 
                     </div> 
-                    <input class="btnconta" type="submit" name="Entrar" onclick="validaFormulario()"><br><br>
+                    <input class="btnconta" type="submit" name="Entrar" onclick="return validaFormulario()"><br><br><br>
+                    <input id="bntCancel" type="reset" value="Cancelar">
                     <h3>Se ainda não possui uma conta &nbsp;<a id="linkEntrar" href="cadastrar.html">Clique Aqui</a></h3>
                     </form>
             </div> 
