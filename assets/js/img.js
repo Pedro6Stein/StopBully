@@ -1,11 +1,11 @@
-let contador = 0
 function trocaImg(){
-	alert('oi');
+	let contador = 0
 	if(contador == 0){
-		document.getElementById("legislacao").src = "legislacao.jpg";
+		document.getElementById("legislacao").src = "bull3.jpeg";
 		contador++;
 	}else{
-		document.getElementById("legislacao").src = "bull3.jpeg";
+		document.getElementById("legislacao").src = "legislacao.jpg";
 		contador--;
 	}
+	trocaImg.repeat(100);
 }
