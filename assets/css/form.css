@@ -125,8 +125,9 @@ body {
 }
 
 #bntCancel{
-    padding: 2px 5px; 
+    padding: 2px 8px; 
     border-radius: 8px;
+    border: none;
     outline: nome; 
     text-transform: uppercase;
     font-weight: 800;
@@ -135,4 +136,8 @@ body {
     background-color: #ca4545;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #ca3f3f8f; 
+}
+#bntCancel:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }

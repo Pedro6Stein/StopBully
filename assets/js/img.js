@@ -9,3 +9,16 @@ function trocaImg(){
 	}
 	trocaImg.repeat(100);
 }
+
+function trocaHtml(){
+	let contador = 0
+	if(contador == 0){
+		document.getElementById("simpaticos").src = "bio.html";
+		contador++;
+	}else{
+		document.getElementById("simpaticos").src = "simpaticos.jpeg";
+		contador--;
+	}
+}
+
+
