@@ -2761,8 +2761,9 @@ input, select, textarea {
 	}
 
 	table {
-		margin: 0 0 2em 0;
-		width: 100%;
+		margin-right: auto;
+		margin-left: 450px;
+		border: 1px solid rgb(0, 0, 0);
 	}
 
 		table tbody tr {
@@ -2776,11 +2777,18 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			border: 1px solid rgb(0, 0, 0);
+			color: #000000;
+			font-size: 0.9em;
+			font-weight: 300;
+			padding: 0 8.75em 0.75em 0.75em;
+			text-align: left;
+
 		}
 
 		table th {
-			color: #ffffff;
+			border: 1px solid rgb(0, 0, 0);
+			color: #000000;
 			font-size: 0.9em;
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -4170,5 +4178,9 @@ input, select, textarea {
 		height: 100%;
 		z-index: 1;
 	}
+	#descTab{
+		text-align: center;
+		margin-right: auto;
+    	margin-left: 320px;
+	}
 	
-  
