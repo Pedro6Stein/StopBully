@@ -1,6 +1,7 @@
 function validaFormulario(){
     let pront = document.getElementById("Prontuario").value;
     let senha = document.getElementById("Senha").value;
+    return confirm('Deseja confimar seus dados?');
     }
 
     function validaFormADM(){
@@ -12,4 +13,11 @@ function validaFormulario(){
      } else{
         alert("usuário e senha inválidos.");
     }
-    }
+
+    } 
+
+    function validaCadastro(){ 
+        // retorna true se confirmado, ou false se cancelado
+        return confirm('Deseja confimar seus dados?');
+     }
+
