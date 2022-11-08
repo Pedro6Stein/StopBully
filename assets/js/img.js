@@ -11,14 +11,9 @@ function trocaImg(){
 }
 
 function trocaHtml(){
-	let contador = 0
-	if(contador == 0){
-		document.getElementById("simpaticos").src = "bio.html";
-		contador++;
-	}else{
-		document.getElementById("simpaticos").src = "simpaticos.jpeg";
-		contador--;
-	}
+	let sms = "Foto que mandamos para a Bragantec!!"
+	document.getElementById("txResultado").innerHTML = sms;
+	
 }
 
 
