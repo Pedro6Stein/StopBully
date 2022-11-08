@@ -3349,9 +3349,6 @@ input, select, textarea {
 		border-style: solid;
 		border-width: 2px; 
 		border-color: rgba(165, 211, 138, 0.95); 
-		
-
-
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
 		margin-top: calc(-0.25em + 1px);
@@ -4190,5 +4187,19 @@ input, select, textarea {
 		text-align: center;
 		margin-right: auto;
     	margin-left: 320px;
+	}
+	#texto{
+		margin:2%;
+		padding:10px 20px;
+		border: 1px solid #ccc;
+		background-color: #e4fff0;
+		border-radius: 0;
+		border-style: solid;
+		border-width: 2px; 
+		border-color: rgba(165, 211, 138, 0.95); 
+		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
+		list-style: none;
+		min-width: 12em;
+		font-style:italic;
 	}
 	
