@@ -11,7 +11,7 @@ function trocaImg(){
 }
 
 function trocaHtml(){
-	let sms = "Foto que mandamos para a Bragantec!!"
+	let sms = "Foto que tiramos durante a Bragantec!!"
 	document.getElementById("txResultado").innerHTML = sms;
 	
 }
