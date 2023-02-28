@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="atendimento 3.0.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0/dist/tf.min.js"></script>
+
+<head>
+    <title>Chat em HTML</title>
+    
+    <script>
+        window.onload = function() {
+            var form = document.getElementById('chat-form');
+            var messageInput = document.getElementById('chat-message');
+            var chatWindow = document.getElementById('chat-window');
+            var botMessage = document.createElement('div');
+            botMessage.classList.add('message');
+            botMessage.classList.add('bot');
+            chatWindow.appendChild(botMessage);
+            
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                var message = messageInput.value;
+                var sender = 'Eu';
+                var timestamp = new Date().toLocaleTimeString();
+                var newMessage = document.createElement('div');
+                newMessage.classList.add('message');
+                newMessage.innerHTML = '<span class="sender">' + sender + ':</span>' + message + '<span class="timestamp">' + timestamp + '</span>';
+                chatWindow.appendChild(newMessage);
+                
+                var botResponse = generateBotResponse(message);
+                botMessage.innerHTML = '<span class="sender">Bot:</span>' + botResponse + '<span class="timestamp">' + timestamp + '</span>';
+                
+                messageInput.value = '';
+            });
+        };
+        
+        
+
+
+
+        form.addEventListener('submit', async function(event) {
+	event.preventDefault();
+	var message = messageInput.value;
+	var sender = 'Eu';
+	var timestamp = new Date().toLocaleTimeString();
+	var newMessage = document.createElement('div');
+	newMessage.classList.add('message');
+	newMessage.innerHTML = '<span class="sender">' + sender + ':</span>' + message + '<span class="timestamp">' + timestamp + '</span>';
+	chatWindow.appendChild(newMessage);
+	messageInput.value = '';
+
+	// Obtemos a resposta do GPT-2
+	const response = await generateResponse(message);
+	const botMessage = document.createElement('div');
+	botMessage.classList.add('message', 'sender');
+	botMessage.innerHTML = '<span class="sender-name">ChatGPT:</span>' + response + '<span class="timestamp">' + new Date().toLocaleTimeString() + '</span>';
+	chatWindow.appendChild(botMessage);
+});
+
+async function generateResponse(userMessage) {
+	// Tokenizamos a mensagem do usuário
+	const tokenizer = await createTokenizer();
+	const inputIDs = tokenizer.encode(userMessage);
+
+	// Obtemos a resposta do modelo do GPT-2
+	const model = await loadModel();
+	const outputIDs = await model.predict(tf.tensor2d(inputIDs, [1, inputIDs.length]), { batchSize: 1 }).argMax(-1).data();
+	const outputText = tokenizer.decode(outputIDs.slice(1));
+
+	return outputText;
+}
+
+async function createTokenizer() {
+	const tokenizer = await tf.data.textLineDataset('https://storage.googleapis.com/gpt-2/vocab/345M/encoder.json');
+	return new Tokenizer(tokenizer);
+}
+
+async function loadModel() {
+	const model = await tf.loadGraphModel('https://storage.googleapis.com/gpt-2/models/345M/model.json');
+	return new Model(model);
+}
+
+class Tokenizer {
+	constructor(tokenizer) {
+		this.tokenizer = tokenizer;
+	}
+
+	encode(text) {
+		const tokens = this.tokenizer.map(char => text.indexOf(char) === -1 ? ' ' : char);
+		const encoded = tokens.map(token => this.tokenizer[token]);
+		return encoded;
+	}
+
+	decode(ids) {
+		const decoded = ids.map(id => this.tokenizer[id]);
+		const text = decoded.join('').replace(/ {2,}/g, ' ');
+		return text;
+	}
+}
+
+class Model {
+	constructor(model) {
+		this.model = model;
+	}
+
+	async predict(input, options) {
+		const prediction = await this.model.executeAsync(input, options);
+		return prediction.slice([0, 1], [-1, -1]);
+	}
+}
+
+    </script>
+</head>
+<body>
+    <div id="chat-window"></div>
+    <form id="chat-form">
+        <input type="text" id="chat-message" placeholder="Digite sua mensagem...">
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+</body>
+</html>
