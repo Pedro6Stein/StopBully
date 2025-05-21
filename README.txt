@@ -8,7 +8,8 @@
 ## 🌐 Site de Divulgação  
 Acesse a página oficial do projeto em:  
 🔗 https://feirabragantec.com.br/2023/projeto.php?numero=INF031  
-![IFSP – Câmpus Bragança Paulista](assets/ifsp-campus-braganca.png)
+
+![IFSP – Câmpus Bragança Paulista](https://raw.githubusercontent.com/Pedro6Stein/StopBully/main/assets/ifsp-campus-braganca.png)
 
 ---
 
