@@ -1,35 +1,48 @@
-Landed by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🛡 StopBully  
 
+> **Projeto de Ciência e Tecnologia 2023 – IFSP Câmpus Bragança Paulista**  
+> **HTML + CSS + JavaScript**  
 
-A dark, slick, modern, responsive, adjective-drenched design built around an extremely
-dynamic landing page (scroll that mofo!). Inspired by Big Picture, another design
-of mine with a similarish feel/flow, only this time I took it waaaaaay further and
-actually made it multipurpose (versus copping out and making it a one pager like I
-did last time ;) Includes multiple pages, a bunch of pre-styled elements, and all
-its Sass sources.
+---
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## 🌐 Site de Divulgação  
+Acesse a página oficial do projeto em:  
+🔗 https://feirabragantec.com.br/2023/projeto.php?numero=INF031  
+![IFSP Câmpus Bragança Paulista](./assets/ifsp-campus-braganca.png)
 
-(* = Not included)
+---
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+## 📋 Autores  
+- Pedro Stein 
+- Thiago Pinheiro Luiz  
+- Samuel Fellipe Souto Correia  
+- Vitor Rafael Gomes Neres  
+- Orientador: Luiz Gustavo Diniz de Oliveira Véras  
 
-AJ
-aj@lkn.io | @ajlkn
+---
 
+## 📖 Sobre o Projeto  
+StopBully é um site estático em **HTML, CSS e JavaScript** criado como parte do trabalho de conclusão do curso técnico no IFSP. Ele reúne:
 
-Credits:
+- **Informações e pesquisas** sobre os efeitos do bullying e do estresse em alunos.  
+- **Formulários de feedback** para professores e estudantes.  
+- **Recursos visuais** (gráficos simples, infográficos) para tornar o conteúdo mais acessível.
 
-	Demo Images:
-		Unsplash (unsplash.com)
+> ⚠️ **Obs.** Esse site foi o **primeiro contato prático** com front-end durante o Ensino Médio Técnico—uma oportunidade de aplicar conceitos de HTML semântico, CSS responsivo e um pouco de JavaScript.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+---
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## 🎯 Objetivos  
+- **Divulgar** dados e estatísticas sobre bullying e estresse escolar  
+- **Educar** estudantes e professores com conteúdo conciso e didático  
+- **Coletar** opiniões através de formulários e enquetes  
+- **Praticar** técnicas iniciais de front-end para futuros projetos web  
+
+---
+
+## 🛠 Tecnologias Utilizadas  
+- **HTML5** (estrutura semântica)  
+- **CSS3** (layout responsivo com Flexbox/Grid)  
+- **JavaScript** (interatividade básica e validação de formulários)  
+- **GitHub Pages** (hospedagem estática)  
+
