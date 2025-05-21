@@ -8,12 +8,8 @@
 ## 🌐 Site de Divulgação  
 Acesse a página oficial do projeto em:  
 🔗 https://feirabragantec.com.br/2023/projeto.php?numero=INF031  
-<img 
-  src="assets/ifsp-campus-braganca.png" 
-  alt="IFSP – Câmpus Bragança Paulista" 
-  width="600" 
-  style="max-width:100%; height:auto;" 
-/>
+![IFSP – Câmpus Bragança Paulista](assets/ifsp-campus-braganca.png)
+
 
 ---
 
